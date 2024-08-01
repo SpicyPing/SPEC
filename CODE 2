@@ -1,0 +1,5 @@
+import random
+array = []
+n = int(input("How large would your population sample size be? "))
+pzero = random.randint(1,n)
+while 
