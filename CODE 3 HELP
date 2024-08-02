@@ -1,0 +1,10 @@
+from collections import Counter
+array = [1,2,3,4,5,5]
+print(array)
+counter = Counter(array)
+duplicates = [item for item, count in counter.items() if count > 1] # Detecting duplicated numbers
+if duplicates:
+    purge = array.index(duplicates-1) # want to identify index of duplicate
+    print(purge) # not necessary
+    del array(purge) # want to delete one of the duplicates from the array
+    print (array)
